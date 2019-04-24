@@ -1,5 +1,6 @@
 import React from 'react';
 import Todo from "./components/TodoComponents/Todo";
+import TodoList from './components/TodoComponents/TodoList';
 
 
 
@@ -66,9 +67,10 @@ class App extends React.Component {
       <div>
         <h2>Welcome to your Todo App!</h2>
         <div>
-        {this.state.ThingsToDo.map(item => (
+        {/* {this.state.ThingsToDo.map(item => (
           <Todo do={item} />
-        ))}
+        ))} */}
+        <TodoList shit={this.state.ThingsToDo} />
         </div>
         <form>
           <input
